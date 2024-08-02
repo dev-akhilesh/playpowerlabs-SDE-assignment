@@ -1,0 +1,325 @@
+/* Main container styles */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Dark mode main container */
+#dark-main-container {
+    background-color: #131416;
+}
+
+/* Upper row styles */
+.upper-row {
+    background: rgba(196, 194, 194, 0.338);
+    position: relative;
+    height: 10vh;
+    padding-inline: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 5vw;
+    margin: 0.1vh 1vw;
+}
+
+/* Link row styles */
+.link-row {
+    background: rgba(196, 194, 194, 0.338);
+    position: relative;
+    height: 15vh;
+    padding: 1.5vh 5vw;
+    margin: 0.1vh 1vw;
+}
+
+/* Input field styles for link row */
+.link-input {
+    width: 100%;
+    height: 6vh;
+    border-radius: 0.5vh;
+    outline: none;
+    border: 1px solid gray;
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.282);
+    padding-inline: 1vw;
+    text-align: start;
+    margin-bottom: 1vh;
+    font-size: 1rem;
+    color: gray;
+}
+
+/* Dark mode styles for upper and link row */
+#dark-upper-row,
+#dark-link-row {
+    background-color: #2c2f34;
+}
+
+/* Date container styles */
+.date-container {
+    position: relative;
+    background-color: white;
+    border: 1px solid gray;
+    height: 6vh;
+    width: 20vw;
+    border-radius: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.282);
+}
+
+/* Date picker styles */
+.date-picker {
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    height: 5.8vh;
+    width: 15vw;
+    border-radius: 1vh 0 0 1vh;
+}
+
+/* Dark mode date picker */
+.dark-date-picker {
+    background-color: #2c2f34ef;
+    color: white;
+}
+
+/* Calendar icon box */
+.calendar-box {
+    border-radius: 0 1vh 1vh 0;
+    border: 0.5px solid gray;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 5vw;
+    background: rgba(128, 128, 128, 0.338);
+    font-size: 1.3rem;
+    color: rgb(37, 156, 174);
+}
+
+/* Filter container styles */
+.filter-container {
+    border: 1px solid gray;
+    border-radius: 1vh;
+    width: 25vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: rgb(37, 156, 174);
+}
+
+/* Filter container child div styles */
+.filter-container div {
+    flex: 1;
+    height: 100%;
+    border-left: 1px solid gray;
+    display: grid;
+    place-items: center;
+    transition: all ease 0.5s;
+}
+
+/* Hover effect for filter container div */
+.filter-container div:hover {
+    background-color: rgba(61, 194, 214, 0.731);
+    color: rgb(206, 204, 204);
+}
+
+/* Time converter container styles */
+.time-converter {
+    padding: 1vh 1vw;
+}
+
+/* Zone container styles */
+.zone-container {
+    position: relative;
+    border: 1px solid rgb(147, 147, 147);
+    height: 25vh;
+    margin-bottom: 1vh;
+    padding-inline: 0.5vw;
+}
+
+/* Dark mode zone container */
+#dark-zone-container {
+    background-color: #2c2f34;
+}
+
+/* Upper row of zone container */
+.zone-upper-row {
+    height: 55%;
+    display: flex;
+    align-items: center;
+    column-gap: 1vw;
+}
+
+/* Time slider styles */
+.time-slider {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+/* Label styles for time slider */
+.labels {
+    width: 100%;
+    height: 2vh;
+    margin-top: -2vh;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+}
+
+/* Thumb styles for time slider */
+.time-thumb {
+    border: 1px solid rgb(104, 104, 104);
+    color: rgb(158, 157, 157);
+    border-radius: 2px;
+    background: #f7f4f4;
+    height: 30px;
+    width: 35px;
+    cursor: grab;
+    outline: none;
+}
+
+/* Track styles for time slider */
+.time-track {
+    background: linear-gradient(to right, #4b698c 0%, #ccf1f0 30%, #ccf1f0 60%, #4b698c 100%);
+    height: 3.5vh;
+    border-radius: 0.5vh;
+}
+
+/* Dark mode track for time slider */
+.dark-time-track {
+    background: linear-gradient(to right, #2c3e50 0%, #8e44ad 25%, #3498db 50%, #1abc9c 75%, #2c3e50 100%);
+}
+
+/* Mark styles for time slider */
+.time-mark {
+    background-color: rgb(113, 110, 110);
+    font-size: 10px;
+    height: 10px;
+    width: 2px;
+}
+
+/* Dropdown select styles */
+.select {
+    width: 100px;
+}
+
+/* Drag handle styles */
+.drag-handle {
+    cursor: grab;
+    user-select: none;
+}
+
+/* Drag button styles */
+.drag-button {
+    color: rgb(161, 155, 155);
+    display: flex;
+    flex-direction: column;
+    cursor: grab;
+}
+
+/* Left box of zone container */
+.zone-left-box {
+    color: gray;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+/* Header styles for left box */
+.zone-left-box h2 {
+    color: rgb(63, 63, 63);
+}
+
+/* Right box of zone container */
+.zone-right-box {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+
+/* Span styles for right box */
+.zone-right-box span {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(158, 147, 147, 0.805);
+}
+
+/* Remove button styles */
+.remove {
+    position: absolute;
+    right: 1vw;
+    top: 0.5vh;
+    font-size: 1.5rem;
+    color: rgb(173, 169, 169);
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ----------------------------------------- */
+
+.link-row {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.dark-link-row {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #fff;
+}
+
+.link-input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: inherit;
+    background-color: inherit;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.input-group label {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.input-group input[type="time"],
+.input-group input[type="date"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: inherit;
+    background-color: inherit;
+}
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    color: #007bff; 
+}
